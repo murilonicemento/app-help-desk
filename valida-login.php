@@ -20,6 +20,9 @@ foreach($usuarios_app as $user){
     if($usuario_autenticado){
         echo "Usuário autenticado";
         $_SESSION["autenticado"] = "SIM";
+        // $_SESSION["x"] = "Um valor";
+        // $_SESSION["y"] = "Outro valor";
+        header("Location: home.php");
     }else {
         
         $_SESSION["autenticado"] = "NÃO";
